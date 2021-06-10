@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_github_demo/tip_route.dart';
+import 'package:english_words/english_words.dart';
+import './new_route.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,7 +29,17 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      initialRoute: '/',
+      // 注册路由表
+      routes: {
+        'new_route': (context) => NewRoute(),
+        '/': (context) => MyHomePage(
+              title: 'demo',
+            ),
+        '/tips/:id': (context) => TipRoute(text: '我是从首页跳转过来的'),
+      },
+
+      // home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
@@ -97,12 +110,47 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Text(WordPair.random().toString()),
             Text(
               'You have pushed the button this many times:',
             ),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
+            ),
+            TextButton(
+              child: Text('open a new route'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return new NewRoute();
+                    },
+                    // fullscreenDialog: true,
+                    // maintainState: false,
+                  ),
+                );
+              },
+            ),
+            TextButton(
+              onPressed: () async {
+                // var result = await Navigator.push(
+                //   context,
+                //   MaterialPageRoute(builder: (context) {
+                //     return TipRoute(text: '我是传过来的提示信息：xxxxxx');
+                //   }),
+                // );
+
+                var result = await Navigator.pushNamed(
+                  context,
+                  '/tips/:id',
+                  arguments: {'a': 1, 'b': 2},
+                );
+
+                print('路由返回值：$result');
+              },
+              child: Text("打开提示页"),
             ),
           ],
         ),
