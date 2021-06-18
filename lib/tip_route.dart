@@ -2,7 +2,7 @@
  * @Author: 明华
  * @Date: 2021-06-10 11:46:59
  * @LastEditors: 明华
- * @LastEditTime: 2021-06-10 12:19:40
+ * @LastEditTime: 2021-06-11 11:29:32
  * @Description: 
  * @FilePath: /flutter_github/lib/tip_route.dart
  */
@@ -19,11 +19,13 @@ class TipRoute extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    dynamic args = ModalRoute.of(context).settings.arguments;
-    print(args);
-    print(args.runtimeType);
-    print(args is Map);
-    print(args['a']);
+    // dynamic args = ModalRoute.of(context).settings.arguments;
+    // print(args);
+    // print(args.runtimeType);
+    // print(args is Map);
+    // print(args['a']);
+
+    print(ModalRoute.of(context).settings.name);
 
     // print(args['a']);
     // TODO: implement build
