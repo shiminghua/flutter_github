@@ -2,7 +2,7 @@
  * @Author: 明华
  * @Date: 2021-06-22 14:33:50
  * @LastEditors: 明华
- * @LastEditTime: 2021-07-09 16:56:13
+ * @LastEditTime: 2021-07-09 17:58:02
  * @Description: 
  * @FilePath: /flutter_github/lib/sparrow_ui/theme_data.dart
  */
@@ -28,5 +28,11 @@ ThemeData themeData = ThemeData(
 
   /// 文本主题
   textTheme: BaseStyle.textTheme,
-  // textTheme: TextTheme(headline2: BaseStyle.headline2),
+  // textTheme: themeData.textTheme.merge(BaseStyle.textTheme),
+  // textTheme: TextTheme(
+  //   headline2: TextStyle(
+  //     fontSize: SuiFonts.fontSize32,
+  //     color: SuiColors.black,
+  //   ),
+  // ),
 );
