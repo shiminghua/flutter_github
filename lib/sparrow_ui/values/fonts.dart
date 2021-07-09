@@ -2,7 +2,7 @@
  * @Author: 明华
  * @Date: 2021-06-28 11:32:38
  * @LastEditors: 明华
- * @LastEditTime: 2021-07-08 16:25:52
+ * @LastEditTime: 2021-07-09 15:40:36
  * @Description: 字体文件
  * @FilePath: /flutter_github/lib/sparrow_ui/values/fonts.dart
  */
@@ -16,14 +16,14 @@ class SuiFonts {
   static double lineHeight16 = 1.6;
 
   /// 常用中文字号
-  static int fontSize20 = 20; // 标签、角标
-  static int fontSize22 = 22; // 摘要、次要信息
-  static int fontSize24 = 24; // 列表主要内容描述
-  static int fontSize26 = 26; // 主要内容
-  static int fontSize28 = 28; // 二级标题
-  static int fontSize30 = 30; // 随手加了一个中间值，不在设计定义范围。备用
-  static int fontSize32 = 32; // 一级标题
-  static int fontSize34 = 34; // 特大标题
+  static double fontSize20 = 20; // 标签、角标
+  static double fontSize22 = 22; // 摘要、次要信息
+  static double fontSize24 = 24; // 列表主要内容描述
+  static double fontSize26 = 26; // 主要内容
+  static double fontSize28 = 28; // 二级标题
+  static double fontSize30 = 30; // 随手加了一个中间值，不在设计定义范围。备用
+  static double fontSize32 = 32; // 一级标题
+  static double fontSize34 = 34; // 特大标题
 
   /// 字重，使用flutter字重
   // static int fontWeight300 = 300;
