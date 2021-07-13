@@ -2,7 +2,7 @@
  * @Author: 明华
  * @Date: 2021-06-08 16:17:09
  * @LastEditors: 明华
- * @LastEditTime: 2021-06-18 11:53:45
+ * @LastEditTime: 2021-07-13 10:38:37
  * @Description: 
  * @FilePath: /flutter_github/test/widget_test.dart
  */
@@ -16,7 +16,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:flutter_github_demo/main1.dart';
+import 'package:flutter_github_demo/index/main1.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {

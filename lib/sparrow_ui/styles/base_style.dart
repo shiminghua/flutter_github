@@ -2,7 +2,7 @@
  * @Author: 明华
  * @Date: 2021-06-22 14:33:29
  * @LastEditors: 明华
- * @LastEditTime: 2021-07-09 17:20:08
+ * @LastEditTime: 2021-07-13 10:37:37
  * @Description: 
  * @FilePath: /flutter_github/lib/sparrow_ui/styles/base_style.dart
  */
@@ -52,19 +52,7 @@ class BaseStyle {
   static TextStyle button4 = _button4;
 
   /// 文字主题
-  // static TextTheme textTheme = _textTheme;
-  static TextTheme textTheme = TextTheme(
-    headline1: _headline1,
-    headline2: _headline2,
-    headline3: _headline3,
-    headline4: _headline4,
-    headline5: _headline5,
-    headline6: _headline6,
-    bodyText1: _bodyText1,
-    bodyText2: _bodyText2,
-    caption: _caption, // 说明文字
-    button: _button1,
-  );
+  static TextTheme textTheme = _textTheme;
 
   ///-------------- 按钮样式
   static ButtonStyle buttonStyle = _buttonStyle;

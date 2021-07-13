@@ -2,17 +2,19 @@
  * @Author: 明华
  * @Date: 2021-07-09 13:02:36
  * @LastEditors: 明华
- * @LastEditTime: 2021-07-09 18:04:57
+ * @LastEditTime: 2021-07-13 10:48:47
  * @Description: 
  * @FilePath: /flutter_github/lib/main.dart
  */
 import 'package:flutter/material.dart';
+import 'package:flutter_github_demo/main_style.dart';
 import 'package:flutter_github_demo/sparrow_ui/styles/base_style.dart';
 import 'package:flutter_github_demo/sparrow_ui/theme_data.dart';
-import 'package:flutter_github_demo/sparrow_ui/values/values.dart';
+// import 'package:flutter_github_demo/sparrow_ui/values/values.dart';
 // import 'package:flutter_github_demo/main1.dart';
 
 main(List<String> args) {
+  // print(MainStyle.headLine1Red.color);
   runApp(MyApp());
 }
 
@@ -51,7 +53,8 @@ class MyHome extends StatelessWidget {
         children: [
           Text(
             '标题 headline1',
-            style: BaseStyle.headline1,
+            // style: BaseStyle.headline1,
+            style: MainStyle.headLine1Red,
           ),
           // Theme(
           //   data: ThemeData(
