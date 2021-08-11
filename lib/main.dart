@@ -2,7 +2,7 @@
  * @Author: 明华
  * @Date: 2021-07-09 13:02:36
  * @LastEditors: 明华
- * @LastEditTime: 2021-07-13 10:48:47
+ * @LastEditTime: 2021-08-10 16:09:13
  * @Description: 
  * @FilePath: /flutter_github/lib/main.dart
  */
@@ -55,6 +55,8 @@ class MyHome extends StatelessWidget {
             '标题 headline1',
             // style: BaseStyle.headline1,
             style: MainStyle.headLine1Red,
+            // class: [BaseStyle.headLine1, SuiColors.red[8]],
+            // style: []
           ),
           // Theme(
           //   data: ThemeData(
